@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>五年五班的网站</title>
+    <style>  
+      body {
+        margin: 0;
+      }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #199;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1134;
+}
+    </style>
+  </head>
+  <body>
+    <div>
+    <ul>
+  <li><a href="./index.html">主页</a></li>
+  <li><a href="https://news.cctv.com/">新闻</a></li>
+  <li><a href="./jianjie.html">联系</a></li>
+  <li><a href="./about.html">关于</a></li>
+</ul>
+    </div>
+    <div 
+    style="text-align: center;
+    background-color:#ADD8E6;
+    padding:70px
+    "
+    >
+    <h1>网站大改版啦</h1>
+    <p>谢谢大家的支持<p>
+    <p>我学习到了更多关于网站的知识</p>
+    <p>再次谢谢大家</p>
+    </div>
+    <div 
+    style="text-align: center;
+    background-color:#f1f1f1;
+    padding:70px
+    ">
+    <h1>一些奇奇怪怪的东东</h1> 
+    <p>天气预报</p>
+    <iframe allowtransparency="true" frameborder="0" width="500" height="100" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=5&bd=1&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=877&h=100&align=center"></iframe>
+    <p>随机数<p>
+    <button onclick="myFunction()">点我开始测随机数</button>	
+     <script>
+      function myFunction() {
+        // 用户输入
+       const min = parseInt(prompt("输入最小值: "));
+      const max = parseInt(prompt("输入最大值: "));
+
+       // 生成随机数
+        const a = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        // 显示随机数
+         document.write(`${min} 到 ${max} 的随机数：${a}`);
+}
+</script>
+    </div>
+</body>
+</html>
+    </div>
+  </body>
+</html>
