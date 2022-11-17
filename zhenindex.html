@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>五年五班的网站</title>
     <style>  
-      body {
-        margin: 0;
-      }
+    body{
+
+    }
   ul {
     list-style-type: none;
     margin: 0;
@@ -32,19 +32,109 @@ li a:hover {
     background-color: #1134;
 }
     </style>
+    </style>
   </head>
   <body>
+<style>  
+      ody {
+        margin: 0;
+      }
+      
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #199;
+}
+       a{ 
+       text-decoration:none
+       } 
+       a:hover{
+       text-decoration:none
+       }
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1134;
+}
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+         ! function (e, t, a) {
+            function r() {
+                for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[
+                        e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x +
+                    "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e]
+                    .scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+                requestAnimationFrame(r)
+            }
+ 
+            function n() {
+                var t = "function" == typeof e.onclick && e.onclick;
+                e.onclick = function (e) {
+                    t && t(), o(e)
+                }
+            }
+ 
+            function o(e) {
+                var a = t.createElement("div");
+                a.className = "heart", s.push({
+                    el: a,
+                    x: e.clientX - 5,
+                    y: e.clientY - 5,
+                    scale: 1,
+                    alpha: 1,
+                    color: c()
+                }), t.body.appendChild(a)
+            }
+ 
+            function i(e) {
+                var a = t.createElement("style");
+                a.type = "text/css";
+                try {
+                    a.appendChild(t.createTextNode(e))
+                } catch (t) {
+                    a.styleSheet.cssText = e
+                }
+                t.getElementsByTagName("head")[0].appendChild(a)
+            }
+ 
+            function c() {
+                return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math
+                    .random()) + ")"
+            }
+            var s = [];
+            e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e
+                .mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+                    setTimeout(e, 1e3 / 60)
+                }, i(
+                    ".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"
+                ), n(), r()
+    </script>
     <div>
-    <ul>
-  <li><a href="./index.html">主页</a></li>
+      <ul>
+      <li><a href="./zhenindex.html">主页</a></li>
   <li><a href="https://news.cctv.com/">新闻</a></li>
+  <li><a href="./sousuo.html">搜索</a></li>
   <li><a href="./jianjie.html">联系</a></li>
   <li><a href="./about.html">关于</a></li>
 </ul>
     </div>
     <div 
     style="text-align: center;
-    background-color:#ADD8E6;
+    background-image:url('./VCG21130048874-FIE.jpg');
     padding:70px
     "
     >
@@ -60,7 +150,7 @@ li a:hover {
     ">
     <h1>一些奇奇怪怪的东东</h1> 
     <p>天气预报</p>
-    <iframe allowtransparency="true" frameborder="0" width="500" height="100" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=5&bd=1&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=877&h=100&align=center"></iframe>
+    <iframe allowtransparency="true" frameborder="0" width="500" height="100" scrolling="no" src="https://tianqi.2345.com/plugin/widget/index.htm?s=2&z=1&t=1&v=0&d=5&bd=1&k=000000&f=&ltf=009944&htf=cc0000&q=1&e=1&a=1&c=54511&w=877&h=100&align=center"></iframe>
     <p>随机数<p>
     <button onclick="myFunction()">点我开始测随机数</button>	
      <script>
@@ -75,10 +165,7 @@ li a:hover {
         // 显示随机数
          document.write(`${min} 到 ${max} 的随机数：${a}`);
 }
-</script>
+    </script>
     </div>
 </body>
-</html>
-    </div>
-  </body>
 </html>
